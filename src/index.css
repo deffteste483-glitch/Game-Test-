@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: 'Cinzel', Georgia, serif;
+    --font-body: 'Cormorant Garamond', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: #120a06;
+    color: #f4ebd9;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+  }
+
+  .font-body {
+    font-family: var(--font-body);
+  }
+
+  .font-mono-num {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+.pixel-canvas {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+/* Custom manuscript input underline & autofill override */
+input.manuscript-input:-webkit-autofill,
+input.manuscript-input:-webkit-autofill:hover,
+input.manuscript-input:-webkit-autofill:focus {
+  -webkit-text-fill-color: #26160c;
+  -webkit-box-shadow: 0 0 0px 1000px rgba(236, 221, 194, 0.85) inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Subtle custom scrollbar for parchment panels on compact screens */
+.parchment-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.parchment-scroll::-webkit-scrollbar-track {
+  background: rgba(62, 39, 35, 0.12);
+}
+.parchment-scroll::-webkit-scrollbar-thumb {
+  background: rgba(107, 29, 47, 0.45);
+  border-radius: 3px;
+}

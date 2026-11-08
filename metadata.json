@@ -1,0 +1,8 @@
+{
+  "name": "Remix Musical Tavern — O Livro de Visitantes",
+  "description": "Um jogo musical ambientado em uma taverna medieval aconchegante. Assine o Livro de Visitantes no balcão e descubra lendas da música em arte e pixel art 16-bit.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
